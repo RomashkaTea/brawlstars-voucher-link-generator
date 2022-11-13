@@ -1,4 +1,4 @@
-import random
+import uuid
 
 url = "https://link.brawlstars.com/?action=voucher&code="
 
