@@ -1,16 +1,11 @@
 import random
 
-url = "https://link.brawlstars.com/en?action=voucher&code="
-
-def randombytes(length):
-    return random.randbytes(length).hex()
+url = "https://link.brawlstars.com/?action=voucher&code="
 
 def generate_voucher_code():
-    result = ""
-    
-    result += f"{randombytes(4)}-{randombytes(2)}-{randombytes(2)}-{randombytes(2)}-{randombytes(6)}"
+    result = uuid.uuid4()
    
-    return result
+    return str(result)
 
 r = ""
 
